@@ -20,26 +20,25 @@
 # if z > 5:
     # print(z)
 
-# def max(a,b):
-#     if a > b:
-#         return(str(a) + " Більше b")
-#     else:
-#         return(str(b) + " Більше a")
-# result = max(int(input("Перше число")),(int(input("Друге число"))))
-# print(result)
+def max(a,b):
+     if a > b:
+         return(str(a) + " Більше b")
+     else:
+         return(str(b) + " Більше a")
+result = max(int(input("Перше число")),(int(input("Друге число"))))
+print(result)
 #---------------------------------------------------------------s------------
-# def length(string):
-#     string_length = len(string)
-
-#     return(string_length)
-# result = length(input('Напишіть любий текст: '))
-# print(result)
-
-# def k(a,b,c):
-#      return ((a + b + c)  / 3)
-# result = k(1,2,3)
-# print(result)
-
+def length(string):
+    string_length = len(string)
+    return(string_length)
+result = length(input('Напишіть любий текст: '))
+print(result)
+#-------------------------------------------------------------
+def k(a,b,c):
+    return ((a + b + c)  / 3)
+result = k(1,2,3)
+print(result)
+#-------------------------------------------------------------------------
 
 
 
