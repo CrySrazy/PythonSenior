@@ -2,11 +2,12 @@ import random
 
 class Student:
     
-    def __init__(self,name):
+    def __init__(self,name,money):
         self.name = name
         self.gladness = 50
         self.progress = 0
         self.alive = True
+        self.money = 1000
 
     def to_study(self):
         print("Time to study")
@@ -21,6 +22,17 @@ class Student:
         print("Rest time")
         self.gladness += 5
         self.progress -= 0.1
+
+    def to_hunter(self):
+        print("I am cool, i am hunter")
+        self.gladness += 1
+        self.progress += 0.1
+
+    def to_go_market(self):
+        print("money its water")
+        self.gladness += 2
+        self.progress += 0.1
+        self.money -= 3
 
     def to_eat(self):
         print("Nyam Nyam")
