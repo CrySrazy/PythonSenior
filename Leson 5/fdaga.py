@@ -1,27 +1,30 @@
+
 class Hero:
     print("Hi")
-    amount_students = 0
-    def __init__(self,name,age,power,Race):
+    def __init__(self,name,age,race,height):
         self.name = name
         self.age = age
-        self.power = power
-        self.Lvl = 1
-        self.Race = Race
-
-        print("i am alive!")
-        Hero.amount_students += 1
-
+        self.race = race
+        self.height = 180
+    
     def show(self):
         print(self.name)
         print(self.age)
-        print(self.Lvl)
-        print(self.power)
-        print(self.Race)
+        print(self.race)
+        print(self.height)
 
-First = Hero(name=(input("Твоє Імя: ")),age=(input("Скільки тобі років: ")),power=(input("Веди свою силу: ")),Race=(input("Веди свою расу: ")))
+class elves(Hero):
+    pass
+
+class gnomes(Hero):
+    pass
+
+class magicians(Hero):
+    pass 
+
+nick = elves()
+stas = gnomes()
+kiril = magicians()
+
+First = Hero(name=(input("Твоє Імя: ")),age=(input("Скільки тобі років: ")),Race=(input("Веди свою расу: ")))
 First.show()
-
-Second = Hero(name=(input("Твоє Імя: ")),age=(input("Скільки тобі років: ")),power=(input("Веди свою силу: ")),Race=(input("Веди свою расу: ")))
-Second.show()
-
-print(Hero.amount_students)
